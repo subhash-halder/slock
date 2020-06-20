@@ -1,11 +1,12 @@
 /* user and group to drop privileges to */
-static const char *user  = "nobody";
-static const char *group = "nogroup";
+static const char *user  = "subhash";
+static const char *group = "subhash";
 
 static const char *colorname[NUMCOLS] = {
-	[INIT] =   "black",     /* after initialization */
-	[INPUT] =  "#005577",   /* during input */
-	[FAILED] = "#CC3333",   /* wrong password */
+	[INIT] =   "#282828",     /* after initialization */
+	[INPUT] =  "#458588",   /* during input */
+	[FAILED] = "#cc241d",   /* wrong password */
+	[CAPS] = "#b16286",         /* CapsLock on */
 };
 
 /* treat a cleared input like a wrong password (color) */
